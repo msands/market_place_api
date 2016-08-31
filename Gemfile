@@ -10,10 +10,15 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'active_model_serializers'
 
-group :development, :test do
+group :development do
   gem 'byebug'
-  gem 'web-console', '~> 2.0'
   gem 'spring'
+end
+
+group :test do
+  gem 'rspec-rails', '~> 3.5.2'
+  gem 'factory_girl_rails'
+  gem 'ffaker'
 end
 
 group :doc do
