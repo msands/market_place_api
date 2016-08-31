@@ -10,6 +10,9 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'active_model_serializers'
 
+# User authentication
+gem 'devise', '~> 4.1.1'
+
 group :development do
   gem 'byebug'
   gem 'spring'
