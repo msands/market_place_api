@@ -13,15 +13,16 @@ gem 'active_model_serializers'
 # User authentication
 gem 'devise', '~> 4.1.1'
 
-group :development do
+group :development, :test do
   gem 'byebug'
   gem 'spring'
+  gem 'rspec-rails', '~> 3.5.2'
 end
 
 group :test do
-  gem 'rspec-rails', '~> 3.5.2'
   gem 'factory_girl_rails'
   gem 'ffaker'
+  gem 'shoulda-matchers', '2.5.0'
 end
 
 group :doc do
