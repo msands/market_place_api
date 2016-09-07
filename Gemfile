@@ -13,11 +13,18 @@ gem 'active_model_serializers', '0.9.3'
 # User authentication
 gem 'devise', '~> 4.1.1'
 
+# Add Sabisu and requirements
+gem 'sabisu_rails', github: "IcaliaLabs/sabisu-rails"
+gem 'furatto', github: "IcaliaLabs/furatto-rails"
+gem 'font-awesome-rails'
+gem 'simple_form'
+
 group :development, :test do
   gem 'byebug'
   gem 'spring'
   gem 'pry'
   gem 'rspec-rails', '~> 3.5.2'
+  gem 'better_errors'
 end
 
 group :test do
